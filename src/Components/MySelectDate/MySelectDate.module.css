@@ -1,0 +1,82 @@
+.wrapper {
+  position: relative; }
+  .wrapper .select {
+    width: 100%;
+    height: 45px;
+    background: var(--backgound-color);
+    border: 1px solid var(--color);
+    border-bottom: 1px solid transparent;
+    border-radius: 8px 8px 0px 0px;
+    outline: none;
+    color: var(--color);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2; }
+    .wrapper .select p {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 15px; }
+    .wrapper .select .buttons {
+      display: flex;
+      margin: 0 3px; }
+      .wrapper .select .buttons .appear {
+        margin-top: 1.5px;
+        height: 6px;
+        cursor: pointer; }
+      .wrapper .select .buttons .clear {
+        margin-right: 10px;
+        cursor: pointer; }
+  .wrapper .closed {
+    border: 1px solid var(--color);
+    border-bottom: 1px solid var(--color);
+    border-radius: 8px 8px 8px 8px;
+    z-index: 2; }
+  .wrapper .body {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    list-style: none;
+    padding: 20px 0;
+    background: var(--background-color);
+    border: 1px solid var(--color);
+    border-top: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 0px 0px 8px 8px;
+    max-height: 300px;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center; }
+    .wrapper .body .row {
+      display: flex;
+      align-items: center; }
+      .wrapper .body .row input {
+        max-width: 95px;
+        height: 45px;
+        background-color: var(--input-color);
+        color: black;
+        border: none;
+        font-weight: 400;
+        font-size: 13px; }
+        .wrapper .body .row input::placeholder {
+          color: rgba(0, 0, 0, 0.3);
+          font-weight: 400;
+          font-size: 13px; }
+      .wrapper .body .row .spliter {
+        width: 12px;
+        height: 1px;
+        background-color: var(--color);
+        margin: 0 10px; }
+
+@media (max-width: 1365px) {
+  .row {
+    flex-direction: column;
+    gap: 15px; } }
+@media (max-width: 767px) {
+  .row {
+    flex-direction: row;
+    gap: 0; } }

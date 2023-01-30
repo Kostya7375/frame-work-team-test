@@ -1,0 +1,41 @@
+.body {
+  max-width: 280px;
+  display: flex;
+  margin-left: .5px;
+  margin-top: 40px;
+  padding-bottom: 100px; }
+  .body .item, .body .itemActive {
+    color: var(--color);
+    width: 41px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -.5px;
+    background: transparent;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    cursor: pointer;
+    border: 1px solid var(--color);
+    border-right: none; }
+    .body .item:disabled, .body .itemActive:disabled {
+      opacity: .3; }
+      .body .item:disabled:hover, .body .itemActive:disabled:hover {
+        cursor: default;
+        background-color: transparent; }
+    .body .item:hover, .body .itemActive:hover {
+      background-color: var(--hover-color); }
+    .body .item:first-child, .body .itemActive:first-child {
+      border-radius: 8px 0 0 8px; }
+    .body .item:last-child, .body .itemActive:last-child {
+      border-radius: 0 8px 8px 0;
+      border-right: 1px solid var(--color); }
+    .body .item .mirror, .body .itemActive .mirror {
+      transform: matrix(-1, 0, 0, 1, 0, 0); }
+  .body .itemActive {
+    color: var(--inverse-color);
+    background-color: var(--inverse-background-color); }
+    .body .itemActive:hover {
+      color: var(--inverse-color);
+      background-color: var(--inverse-background-color); }

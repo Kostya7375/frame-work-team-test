@@ -1,0 +1,25 @@
+:root {
+    --background-color-dark: rgb(0, 0, 0);
+    --color-dark: rgb(255, 255, 255);
+    --inverse-color-dark: rgb(0, 0, 0);
+    --inverse-background-color-dark: rgb(255, 255, 255);
+    --placeholder-color-dark: rgba(255, 255, 255, 0.3);
+    --hover-color-dark: #464646;
+    --input-color-dark: #fff;
+    
+    --background-color-light: rgb(255, 255, 255);
+    --color-light: rgb(0, 0, 0);
+    --inverse-color-light: rgb(225, 255, 255);
+    --inverse-background-color-light: rgb(0, 0, 0);
+    --placeholder-color-light: rgba(0, 0, 0, 0.3);
+    --hover-color-light: #EDEDED;
+    --input-color-light: #EFEFEF;
+
+    --background-color: var(--background-color-dark);
+    --color: var(--color-dark);
+    --inverse-background-color: var(--inverse-background-color-dark);
+    --inverse-color: var(--inverse-color-dark);
+    --placeholder-color: var(--placeholder-color-dark);
+    --hover-color: var(--hover-color-dark);
+    --input-color: var(--input-color-dark);
+}

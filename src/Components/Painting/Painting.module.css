@@ -1,0 +1,85 @@
+.body {
+  position: relative;
+  max-width: 100%;
+  padding-top: 75%;
+  border-radius: 20px;
+  overflow: hidden; }
+  .body img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .body .desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    height: 145px;
+    padding: 5px 15px 44px 15px;
+    transform: translate(0, 115px);
+    transition: all 0.15s ease-in-out; }
+    .body .desc h2 {
+      height: 20px;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      color: #000;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+      text-transform: capitalize; }
+    .body .desc .subtitle div {
+      display: flex;
+      margin-top: 5px; }
+      .body .desc .subtitle div b {
+        margin-right: 8px;
+        font-weight: 500;
+        font-size: 13px; }
+      .body .desc .subtitle div p {
+        font-size: 13px; }
+    .body .desc .subtitle .author {
+      margin-top: 6px; }
+      .body .desc .subtitle .author b {
+        margin-right: 4px; }
+  .body:hover {
+    cursor: pointer; }
+    .body:hover .desc {
+      transform: translate(0, 0); }
+      .body:hover .desc h2 {
+        height: fit-content;
+        overflow: visible;
+        white-space: normal;
+        text-overflow: clip; }
+
+.srtBody {
+  padding-top: 0;
+  height: 275px; }
+  .srtBody img {
+    position: static; }
+
+@media (min-width: 1440px) {
+  .body {
+    padding-top: 0;
+    height: 275px; }
+    .body img {
+      position: static; } }
+@media (width: 1024px) {
+  .body {
+    padding-top: 0;
+    height: 230px; }
+    .body img {
+      position: static; } }
+@media (width: 768px) {
+  .body {
+    padding-top: 0;
+    height: 249px; }
+    .body img {
+      position: static; } }
+@media (width: 320px) {
+  .body {
+    padding-top: 0;
+    height: 205px; }
+    .body img {
+      position: static; } }

@@ -1,0 +1,10 @@
+header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+    .theme {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,88 @@
+.wrapper {
+  position: relative; }
+  .wrapper .select {
+    width: 100%;
+    height: 45px;
+    background: var(--background-color);
+    border: 1px solid var(--color);
+    border-bottom: 1px solid transparent;
+    border-radius: 8px 8px 0px 0px;
+    outline: none;
+    color: var(--color);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2; }
+    .wrapper .select p {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 15px; }
+    .wrapper .select .buttons {
+      display: flex;
+      margin: 0 3px; }
+      .wrapper .select .buttons .appear {
+        margin-top: 1.5px;
+        height: 6px;
+        cursor: pointer; }
+      .wrapper .select .buttons .clear {
+        margin-right: 10px;
+        cursor: pointer; }
+  .wrapper .closed {
+    border: 1px solid var(--color);
+    border-bottom: 1px solid var(--color);
+    border-radius: 8px 8px 8px 8px;
+    z-index: 2; }
+  .wrapper ul {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    list-style: none;
+    padding: 10px 0;
+    background: var(--background-color);
+    border: 1px solid var(--color);
+    border-top: 1px solid var(--placeholder-color);
+    border-radius: 0px 0px 8px 8px;
+    max-height: 300px;
+    max-width: 265px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 2; }
+    .wrapper ul::-webkit-scrollbar {
+      position: absolute;
+      right: 8px;
+      width: 9px; }
+    .wrapper ul::-webkit-scrollbar-track {
+      background-color: transparent; }
+    .wrapper ul::-webkit-scrollbar-thumb {
+      background-color: #7b7b7b;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 10px; }
+    .wrapper ul li {
+      padding: 10px 20px 10px 20px;
+      color: var(--color);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      .wrapper ul li:hover {
+        background: var(--inverse-background-color);
+        color: var(--inverse-color);
+        cursor: pointer; }
+    .wrapper ul .active {
+      background: #fff;
+      color: black; }
+  .wrapper .fade {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+
+@media (max-width: 767px) {
+  .wrapper ul {
+    max-width: 100%; } }
